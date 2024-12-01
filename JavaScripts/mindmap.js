@@ -10,8 +10,16 @@ class Graph extends HTMLCanvasElement {
         else {
             this.canvasContext = acanvas;
         }
+        this.dpiScale = window.devicePixelRatio;
+    }
+    pixelPerfect() {
+        this.style.width = this.width + "px";
+        this.style.height = this.height + "px";
+        this.width = Math.floor(this.width * this.dpiScale);
+        this.height = Math.floor(this.height * this.dpiScale);
     }
 }
+Graph.observedAttributes = ["devicePixelRatio", "size"];
 class MindMap extends Graph {
     constructor() {
         super();
@@ -23,9 +31,10 @@ class MindMap extends Graph {
             this.canvasContext = acanvas;
         }
         this.rootObj = new MindMapObj("空导图");
+        this.dpiScale = window.devicePixelRatio;
+        this.pixelPerfect();
     }
     connectedCallback() {
-        var _a;
         var acanvas = this.getContext("2d");
         if (!acanvas || !(acanvas instanceof CanvasRenderingContext2D)) {
             throw new Error('Failed to get 2D context');
@@ -33,12 +42,13 @@ class MindMap extends Graph {
         else {
             this.canvasContext = acanvas;
         }
-        this.canvasContext.lineWidth = 8;
-        (_a = this.canvasContext) === null || _a === void 0 ? void 0 : _a.strokeRect(15, 15, 114, 514);
+        acanvas.font = "48px serif";
+        acanvas.fillText("canvas可以用，好欸！", 0, 48);
     }
     read_MM_XML(mm) {
     }
 }
+MindMap.observedAttributes = ["devicePixelRatio", "size"];
 customElements.define("mengxi-mindmap", MindMap, { extends: "canvas" });
 class MindMapObj {
     constructor(content) {
