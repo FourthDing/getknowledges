@@ -1,0 +1,39 @@
+body{
+    background: "https://firefox-settings-attachments.cdn.mozilla.net/main-workspace/newtab-wallpapers-v2/e94b1e49-c518-40d6-98e3-dffab6cc370d.avif";
+}
+
+div.flexColumns{
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+}
+.sideMenu{
+    background-color: #ffd700;
+    flex-grow: 0;
+    min-width:192px;
+}
+.sideMenu > details{
+    background-color: #ffd700;
+    border-left: 8px orangered solid;
+}
+details > a{
+    padding-left: 8px;
+}
+.sideMenu > details:nth-child(even){
+    background-color: #ffbb00;
+}
+.mainContent{
+    background-color: #eeeeee;
+    flex-grow: 1;
+    padding:0 32px;
+}
+.header{
+    background-color: #ff8000;
+}
+.footer{
+    background-color: #ff8000;
+}
+canvas.mengxi-mindmap{
+    border-bottom: dotted grey 4px;
+    border-top: solid grey 8px;
+}

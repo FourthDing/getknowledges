@@ -1,16 +1,62 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>《求知》所有知识。</title>
-    </head>
-    <script src="../JavaScripts/urlparams.js"></script>
-    <script src="../JavaScripts/mindmap.js"></script>
-    <body>
-        <h1>《求知》所有知识。</h1>
-        <p>我们正在努力更新网站，争取向网站里扔很多的知识，同时有条理地展示它们且让你掌握它们。</p>
-        <p>接下来要在这里放一张大导图，一定会看起来很厉害吧。</p>
-        <button type="button" onclick="alert(page)">GH pages应该能用JS吧……</button>
-        <canvas is="mengxi-mindmap" height=300px width=600px></canvas>
-    </body>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>《求知》所有知识。</title>
+</head>
+<link rel="stylesheet" type="text/css" href="../Style/main.css">
+<script src="../JavaScripts/urlparams.js"></script>
+<script src="../JavaScripts/mindmap.js"></script>
+
+<body>
+    <div id="container">
+        <div class="header">
+            <h1>《求知》所有知识。</h1>
+        </div>
+
+        <div class="flexColumns">
+            <div class="sideMenu">
+                <b>菜单</b><br />
+                双栏式布局<br />
+                往里头放各科的夹<br />
+                想想放啥……
+                <details><summary>科学</summary>
+                    <a href="">自然科学</a>
+                    <a href="">人文社会科学</a>
+                    <a href="">形式科学</a>
+                    <a href="">应用科学</a>    
+                </details>
+                <details><summary>技术</summary>
+                    <a href="">工业技术</a>
+                    <a href="">农业技术</a>
+                    <a href="">服务业技术</a>    
+                </details>
+            </div>
+
+            <div class="mainContent">
+                <p>
+                    我们正在努力更新网站，争取向网站里扔很多的知识，有条理地展示并使你掌握它们，所以目前没有知识。<br />
+                    不过我们技术不算够用，人手也不多，之前更是没做过这种东西，所以慢慢来吧。
+                </p>
+                <p></p>
+                <button type="button" onclick="alert(page)">
+                    Github pages应该能用JS吧……
+                </button>
+                <br/>
+                <canvas is="mengxi-mindmap" class="mengxi-mindmap" data-href="./test.mm" height="600px" width="600px"></canvas>
+                <script>
+                var img = new Image();
+                img.src = "../Adachi Rei(will be removed soon).png";
+                img.onload = function() {
+                    document.getElementsByTagName("canvas")[0].getContext("2d").drawImage(this,150,430)
+                }
+                </script>
+            </div>
+        </div>
+        <div class="footer">
+            《求知》。
+        </div>
+    </div>
+</body>
+
 </html>
