@@ -1,0 +1,35 @@
+.sideMenu{
+    border-right: 1px gray solid;
+}
+.sideMenu > details{
+    padding-left: 4px;
+    border-top: 1px white solid;
+    border-left: 8px orangered solid;
+}
+.sideMenu > details:nth-child(even){
+    background-color:whitesmoke
+}
+details > a{
+    color: navy;
+    padding-left: 4px;
+    border-left: 8px blue solid;
+}
+details > summary{
+    list-style:none
+}details > summary::before{
+    content: "📂";
+}
+
+.mainContent{
+    background-color: whitesmoke;
+}
+.header{
+    background-color: #7397AB;
+}
+.footer{
+    background-color: #392f41;
+}
+canvas.mengxi-mindmap{
+    border-bottom: dotted grey 4px;
+    border-top: solid grey 8px;
+}

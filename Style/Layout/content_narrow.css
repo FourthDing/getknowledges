@@ -1,0 +1,22 @@
+div.flexColumns{
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+}
+.sideMenu{
+    display: none;
+}
+.sideMenu > details{
+    display:inline-block;
+}
+details > a{
+    padding-left: 8px;
+}
+.header{
+    position: sticky;
+    top: 0px;
+}
+.mainContent{
+    flex-grow: 1;
+    padding:0 32px;
+}

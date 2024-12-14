@@ -60,26 +60,30 @@ class MindMap extends Graph {
         console.log(this.dataset.href);
     }
     connectedCallback() {
-        return __awaiter(this, void 0, void 0, function* () {
-            if (this.dataset.href) {
-                this.href = this.dataset.href;
-                yield this.fetchMMFile();
-                yield this.loadMMXML(this.XMLRaw);
-            }
-            else {
-                this.rootObj = new MindMapObj("空导图");
-            }
-            //测试图样
-            var acanvas = this.canvasContext;
-            acanvas.strokeRect(1, 1, 100, 100);
-            acanvas.font = "12px serif";
-            acanvas.fillText(this.XMLRaw, -10000, 100);
-            acanvas.moveTo(0, 0);
-            acanvas.lineTo(600, 400);
-            acanvas.moveTo(0, 0);
-            acanvas.lineTo(400, 600);
-            acanvas.stroke();
-        });
+        if (this.dataset.href) {
+            var parse = new DOMParser();
+            this.href = this.dataset.href;
+            fetch(this.href)
+                .then(response => response.text()) // 解析数据
+                .then(data => this.XMLRaw = data) // 处理数据
+                .then(data => this.XMLDoc = parse.parseFromString(this.XMLRaw, "application/xml"))
+                .catch(error => console.error('Error happened:', error)); // 错误处理
+            console.log(this.XMLRaw);
+            this.XMLDoc = parse.parseFromString(this.XMLRaw, "application/xml");
+        }
+        else {
+            this.rootObj = new MindMapObj("空导图");
+        }
+        //测试图样
+        var acanvas = this.canvasContext;
+        acanvas.strokeRect(1, 1, 100, 100);
+        acanvas.font = "12px serif";
+        acanvas.fillText(this.XMLRaw, -10000, 100);
+        acanvas.moveTo(0, 0);
+        acanvas.lineTo(600, 400);
+        acanvas.moveTo(0, 0);
+        acanvas.lineTo(400, 600);
+        acanvas.stroke();
     }
     fetchMMFile() {
         return __awaiter(this, void 0, void 0, function* () {
