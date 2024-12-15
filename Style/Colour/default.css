@@ -1,9 +1,6 @@
-.sideMenu{
-    border-right: 1px gray solid;
-}
 .sideMenu > details{
     padding-left: 4px;
-    border-top: 1px white solid;
+    border-top: 2px white solid;
     border-left: 8px orangered solid;
 }
 .sideMenu > details:nth-child(even){
@@ -23,6 +20,9 @@ details > summary{
 .mainContent{
     background-color: whitesmoke;
 }
+.mainContent > p{
+    font-family: serif;
+}
 .header{
     background-color: #7397AB;
 }
@@ -30,6 +30,8 @@ details > summary{
     background-color: #392f41;
 }
 canvas.mengxi-mindmap{
+    color: black;
     border-bottom: dotted grey 4px;
     border-top: solid grey 8px;
+    background-color: white;
 }

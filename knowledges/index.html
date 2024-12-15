@@ -7,7 +7,9 @@
 <link rel="stylesheet" type="text/css" href="../Style/reset.css">
 <link rel="stylesheet" type="text/css" href="../Style/Layout/content_wide.css" media="screen and (min-width: 768px)">
 <link rel="stylesheet" type="text/css" href="../Style/Layout/content_narrow.css" media="screen and (max-width: 767px)">
+<link rel="stylesheet" type="text/css" href="../Style/Layout/content_print.css" media="print">
 <link rel="stylesheet" type="text/css" href="../Style/Colour/default.css">
+<link rel="stylesheet" type="text/css" href="../Style/Colour/default_anim.css">
 <script src="../JavaScripts/urlparams.js"></script>
 <script src="../JavaScripts/mindmap.js"></script>
 
@@ -16,13 +18,19 @@
         <div class="header">
             <h1>《求知》所有知识。</h1>
         </div>
-
         <div class="flexColumns">
-            <div class="sideMenu" is="mengxi-autodetails">
-                <b>菜单</b><br />
-                双栏式布局<br />
-                往里头放各科的夹<br />
-                想想放啥……
+            <button type="button" onclick="
+            var a = document.getElementsByClassName('sideMenu')[0]
+            if (a.dataset.folded){
+                a.style['margin-right'] = '0';
+                a.removeAttribute('data-folded')
+            }else{
+                a.style['margin-right'] = '-15%';
+                a.dataset.folded=true;
+            }
+            "><</button>
+            <div class="sideMenu" is="mengxi-autodetails" data-href="../sorts.json">
+                <b>目录</b>
                 <details><summary>科学</summary>
                     <a href="../">自然科学</a>
                     <a href="">社会科学</a>
@@ -57,9 +65,22 @@
                 <h1></h1>
                 <p>
             </div>
+            <div class="sideTips">
+
+            </div>
+            <button type="button" onclick="
+            var a = document.getElementsByClassName('sideTips')[0]
+            if (a.dataset.folded){
+                a.style['margin-right'] = '0';
+                a.removeAttribute('data-folded')
+            }else{
+                a.style['margin-right'] = '-15%';
+                a.dataset.folded=true;
+            }
+            ">></button>
         </div>
         <div class="footer">
-            《求知》。
+            <span>《求知》。</span>
         </div>
     </div>
 </body>

@@ -1,0 +1,13 @@
+.sideMenu > details:hover{
+    background-color: cornsilk;
+    border-right: 2px orangered solid;
+}
+.sideMenu{
+    transition: margin 300ms ease-in;
+}
+.sideTips{
+    transition: margin 300ms ease-in;
+}
+details > a:hover{
+    border-right: 2px blue solid;
+}
