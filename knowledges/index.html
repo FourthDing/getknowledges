@@ -5,11 +5,12 @@
     <title>《求知》所有知识。</title>
 </head>
 <link rel="stylesheet" type="text/css" href="../Style/reset.css">
-<link rel="stylesheet" type="text/css" href="../Style/Layout/content_wide.css" media="screen and (min-width: 768px)">
-<link rel="stylesheet" type="text/css" href="../Style/Layout/content_narrow.css" media="screen and (max-width: 767px)">
+<link rel="stylesheet" type="text/css" href="../Style/Layout/content_wide.css" media="screen and (min-width: 857px)">
+<link rel="stylesheet" type="text/css" href="../Style/Layout/content_narrow.css" media="screen and (max-width: 856px)">
 <link rel="stylesheet" type="text/css" href="../Style/Layout/content_print.css" media="print">
 <link rel="stylesheet" type="text/css" href="../Style/Colour/default.css">
 <link rel="stylesheet" type="text/css" href="../Style/Colour/default_anim.css">
+
 <script src="../JavaScripts/urlparams.js"></script>
 <script src="../JavaScripts/mindmap.js"></script>
 
@@ -45,16 +46,21 @@
             </div>
 
             <div class="mainContent">
+                <h2>概述</h2>
                 <p>
                     我们正在努力更新网站，争取向网站里扔很多的知识，有条理地展示并使你掌握它们，所以目前没有知识。<br />
-                    不过我们技术不算够用，人手也不多，之前更是没做过这种东西，所以慢慢来吧。
+                    不过我们技术不算够用，人手也不多，之前更是没做过这种东西，所以慢慢来吧。<br />
+                    <span class="text-important">I'm <span class="text-deprecated">different</span>.</span>
                 </p>
                 <p></p>
                 <button type="button" onclick="alert(page)">
                     Github pages应该能用JS吧……
                 </button>
                 <br/>
-                <canvas is="mengxi-mindmap" class="mengxi-mindmap" data-href="./test.mm" height="600px" width="600px"></canvas>
+                <div class="mengxi-canvasContainer">
+                    <p></p>
+                    <canvas is="mengxi-mindmap" class="mengxi-mindmap" data-href="./test.mm" height="600px" width="600px"></canvas>
+                </div>
                 <script>
                 var img = new Image();
                 img.src = "../RS.ico";

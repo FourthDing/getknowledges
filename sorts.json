@@ -1,30 +1,34 @@
 {
-    "name":"目录",
-    "sorts":[
-        {"name":"科学","sorts":[
-            {"name":"自然科学","sorts":[
-                
-            ]},
-            {"name":"社会科学","sorts":[
-                
-            ]},
-            {"name":"形式科学","sorts":[
-                
-            ]},
-            {"name":"思维科学","sorts":[
-                
-            ]}
-        ]},
-        {"name":"技术","sorts":[
-            {"name":"工业技术","sorts":[
-                
-            ]},
-            {"name":"农业技术","sorts":[
-                
-            ]},
-            {"name":"服务业技术","sorts":[
-                
-            ]}
-        ]}
-    ]
+  "sorts": [
+    {
+      "displayName": "测试文件",
+      "type": "article",
+      "href": "knowledges/A/110/testfile.html"
+    },
+    {
+      "displayName": "文件夹测试",
+      "type": "folder",
+      "files": [
+        {
+          "displayName": "测试文件",
+          "type": "article",
+          "href": "knowledges/A/110/testfile.html"
+        }
+      ],
+      "folders": {
+        "A": {
+          "displayName": "文件夹测试",
+          "type": "folder",
+          "files": [
+            {
+              "displayName": "测试文件",
+              "type": "article",
+              "href": "knowledges/A/110/testfile.html"
+            }
+          ],
+          "folders": {}
+        }
+      }
+    }
+  ]
 }

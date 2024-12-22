@@ -31,7 +31,16 @@ details > summary{
 }
 canvas.mengxi-mindmap{
     color: black;
-    border-bottom: dotted grey 4px;
-    border-top: solid grey 8px;
     background-color: white;
+}
+.mengxi-canvasContainer{
+    background-color:#392f41;
+}
+
+.text-important{
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.text-deprecated{
+    text-decoration: line-through
 }

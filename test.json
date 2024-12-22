@@ -1,0 +1,454 @@
+{
+  "displayName": "根目录",
+  "type": "folder",
+  "files": [
+    {
+      "displayName": "index.html",
+      "type": "file",
+      "href": "\\knowledges\\index.html"
+    },
+    {
+      "displayName": "markdowntest.md",
+      "type": "file",
+      "href": "\\knowledges\\markdowntest.md"
+    },
+    {
+      "displayName": "test.mm",
+      "type": "file",
+      "href": "\\knowledges\\test.mm"
+    }
+  ],
+  "folders": {
+    "A": {
+      "displayName": "A",
+      "type": "folder",
+      "files": [],
+      "folders": {
+        "110": {
+          "displayName": "110",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "120": {
+          "displayName": "120",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "130": {
+          "displayName": "130",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "140": {
+          "displayName": "140",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "150": {
+          "displayName": "150",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "160": {
+          "displayName": "160",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "170": {
+          "displayName": "170",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "180": {
+          "displayName": "180",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "190": {
+          "displayName": "190",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        }
+      }
+    },
+    "B": {
+      "displayName": "B",
+      "type": "folder",
+      "files": [],
+      "folders": {
+        "210": {
+          "displayName": "210",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "220": {
+          "displayName": "220",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "230": {
+          "displayName": "230",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "240": {
+          "displayName": "240",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        }
+      }
+    },
+    "C": {
+      "displayName": "C",
+      "type": "folder",
+      "files": [],
+      "folders": {
+        "310": {
+          "displayName": "310",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "320": {
+          "displayName": "320",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "330": {
+          "displayName": "330",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "340": {
+          "displayName": "340",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "350": {
+          "displayName": "350",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "360": {
+          "displayName": "360",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        }
+      }
+    },
+    "D": {
+      "displayName": "D",
+      "type": "folder",
+      "files": [],
+      "folders": {
+        "410": {
+          "displayName": "410",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "413": {
+          "displayName": "413",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "416": {
+          "displayName": "416",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "420": {
+          "displayName": "420",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "430": {
+          "displayName": "430",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "440": {
+          "displayName": "440",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "450": {
+          "displayName": "450",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "460": {
+          "displayName": "460",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "470": {
+          "displayName": "470",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "480": {
+          "displayName": "480",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "490": {
+          "displayName": "490",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "500": {
+          "displayName": "500",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "510": {
+          "displayName": "510",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "520": {
+          "displayName": "520",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "530": {
+          "displayName": "530",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "540": {
+          "displayName": "540",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "550": {
+          "displayName": "550",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "560": {
+          "displayName": "560",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "570": {
+          "displayName": "570",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "580": {
+          "displayName": "580",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "590": {
+          "displayName": "590",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "600": {
+          "displayName": "600",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "610": {
+          "displayName": "610",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "620": {
+          "displayName": "620",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "630": {
+          "displayName": "630",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        }
+      }
+    },
+    "E": {
+      "displayName": "E",
+      "type": "folder",
+      "files": [],
+      "folders": {
+        "535": {
+          "displayName": "535",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "710": {
+          "displayName": "710",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "720": {
+          "displayName": "720",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "730": {
+          "displayName": "730",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "740": {
+          "displayName": "740",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "750": {
+          "displayName": "750",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "760": {
+          "displayName": "760",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "770": {
+          "displayName": "770",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "780": {
+          "displayName": "780",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "790": {
+          "displayName": "790",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "800": {
+          "displayName": "800",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "810": {
+          "displayName": "810",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "820": {
+          "displayName": "820",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "830": {
+          "displayName": "830",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "840": {
+          "displayName": "840",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "850": {
+          "displayName": "850",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "860": {
+          "displayName": "860",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "870": {
+          "displayName": "870",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "880": {
+          "displayName": "880",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "890": {
+          "displayName": "890",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "900": {
+          "displayName": "900",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        },
+        "910": {
+          "displayName": "910",
+          "type": "folder",
+          "files": [],
+          "folders": {}
+        }
+      }
+    }
+  }
+}

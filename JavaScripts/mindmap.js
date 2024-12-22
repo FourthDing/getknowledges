@@ -59,7 +59,6 @@ class MindMap extends Graph {
     }
     connectedCallback() {
         //测试图样
-        debugger;
         var acanvas = this.canvasContext;
         acanvas.fillStyle = "black";
         acanvas.moveTo(0, 0);
