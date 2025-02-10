@@ -5,11 +5,12 @@
     <title>《求知》所有知识。</title>
 </head>
 <link rel="stylesheet" type="text/css" href="../Style/reset.css">
-<link rel="stylesheet" type="text/css" href="../Style/Layout/content_wide.css" media="screen and (min-width: 857px)">
-<link rel="stylesheet" type="text/css" href="../Style/Layout/content_narrow.css" media="screen and (max-width: 856px)">
+<link rel="stylesheet" type="text/css" href="../Style/Layout/content_wide.css" media="screen and (min-width: 1120px)">
+<link rel="stylesheet" type="text/css" href="../Style/Layout/content_narrow.css" media="screen and ((max-width: 1119px))">
 <link rel="stylesheet" type="text/css" href="../Style/Layout/content_print.css" media="print">
 <link rel="stylesheet" type="text/css" href="../Style/Colour/default.css">
 <link rel="stylesheet" type="text/css" href="../Style/Colour/default_anim.css">
+<link rel="stylesheet" type="text/css" href="../Style/Article/default.css">
 
 <script src="../JavaScripts/urlparams.js"></script>
 <script src="../JavaScripts/mindmap.js"></script>
@@ -20,17 +21,17 @@
             <h1>《求知》所有知识。</h1>
         </div>
         <div class="flexColumns">
-            <button type="button" onclick="
+            <button class="sideBarItem"  type="button" onclick="
             var a = document.getElementsByClassName('sideMenu')[0]
             if (a.dataset.folded){
-                a.style['margin-right'] = '0';
+                a.removeAttribute('style')
                 a.removeAttribute('data-folded')
             }else{
-                a.style['margin-right'] = '-15%';
+                a.style['display'] = 'none';
                 a.dataset.folded=true;
             }
             "><</button>
-            <div class="sideMenu" is="mengxi-autodetails" data-href="../sorts.json">
+            <div class="sideBarItem sideMenu" is="mengxi-autodetails" data-src="../sorts.json">
                 <b>目录</b>
                 <details><summary>科学</summary>
                     <a href="../">自然科学</a>
@@ -46,7 +47,7 @@
             </div>
 
             <div class="mainContent">
-                <h2>概述</h2>
+                <h2 id="概述"><a href="#概述">概述</a></h2>
                 <p>
                     我们正在努力更新网站，争取向网站里扔很多的知识，有条理地展示并使你掌握它们，所以目前没有知识。<br />
                     不过我们技术不算够用，人手也不多，之前更是没做过这种东西，所以慢慢来吧。<br />
@@ -57,10 +58,10 @@
                     Github pages应该能用JS吧……
                 </button>
                 <br/>
-                <div class="mengxi-canvasContainer">
-                    <p></p>
-                    <canvas is="mengxi-mindmap" class="mengxi-mindmap" data-href="./test.mm" height="600px" width="600px"></canvas>
-                </div>
+                <figure class="mengxi-GraphContainer">
+                    <canvas is="mengxi-mindmap" class="mengxi-mindmap" data-src="./test.mm" height="600px" width="600px"></canvas>
+                    <figcaption>canvas画图测试</figcaption>
+                </figure>
                 <script>
                 var img = new Image();
                 img.src = "../RS.ico";
@@ -71,16 +72,14 @@
                 <h1></h1>
                 <p>
             </div>
-            <div class="sideTips">
-
-            </div>
-            <button type="button" onclick="
+            <div class="sideBarItem sideTips"><iframe class="sideTipsIframe" src="tips.html"></iframe></div>
+            <button class="sideBarItem" type="button" onclick="
             var a = document.getElementsByClassName('sideTips')[0]
             if (a.dataset.folded){
-                a.style['margin-right'] = '0';
+                a.removeAttribute('style')
                 a.removeAttribute('data-folded')
             }else{
-                a.style['margin-right'] = '-15%';
+                a.style['display'] = 'none';
                 a.dataset.folded=true;
             }
             ">></button>

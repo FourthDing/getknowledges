@@ -3,11 +3,32 @@
     border-right: 2px orangered solid;
 }
 .sideMenu{
-    transition: margin 300ms ease-in;
+    transition: width 300ms ease-in;
 }
 .sideTips{
-    transition: margin 300ms ease-in;
+    transition: width 300ms ease-in;
+}
+.sideTipsIframe{
+    transition: width 300ms ease-in;
 }
 details > a:hover{
     border-right: 2px blue solid;
+}
+h2:hover {
+  border-left: navy solid thick;
+  transition: 0.1s ease-in;
+  a{
+    color:navy;
+    text-decoration: underline;
+  }
+  a:visited{
+        color:#2b2b2b;
+    }
+  a:hover{
+    color:blue
+  }
+  ::before{
+    opacity: 1;
+    transition: opacity 0.1s ease-in;
+  }
 }

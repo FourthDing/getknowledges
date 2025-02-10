@@ -60,6 +60,8 @@ class MindMap extends Graph {
     connectedCallback() {
         //测试图样
         var acanvas = this.canvasContext;
+        acanvas.imageSmoothingEnabled = true;
+        acanvas.imageSmoothingQuality = "high";
         acanvas.fillStyle = "black";
         acanvas.moveTo(0, 0);
         acanvas.lineTo(600, 400);
@@ -67,10 +69,10 @@ class MindMap extends Graph {
         acanvas.lineTo(400, 600);
         acanvas.stroke();
         acanvas.font = "12px serif";
-        console.log(this.dataset.href);
-        if (this.dataset.href) {
+        console.log(this.dataset.src);
+        if (this.dataset.src) {
             var parse = new DOMParser();
-            fetch(this.dataset.href)
+            fetch(this.dataset.src)
                 .then(response => response.text()) // 解析数据
                 .then(data => this.XMLRaw = data) // 处理数据
                 .then(data => this.XMLDoc = parse.parseFromString(this.XMLRaw, "application/xml"))

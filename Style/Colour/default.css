@@ -1,46 +1,61 @@
-.sideMenu > details{
-    padding-left: 4px;
-    border-top: 2px white solid;
-    border-left: 8px orangered solid;
-}
-.sideMenu > details:nth-child(even){
-    background-color:whitesmoke
-}
-details > a{
-    color: navy;
-    padding-left: 4px;
-    border-left: 8px blue solid;
-}
-details > summary{
-    list-style:none
-}details > summary::before{
-    content: "📂";
+.sideMenu{
+  overflow-y: auto;
 }
 
-.mainContent{
-    background-color: whitesmoke;
+.sideMenu > details {
+  border-top: 2px white solid;
+  border-left: 8px orangered solid;
 }
-.mainContent > p{
-    font-family: serif;
+.sideMenu > details:nth-child(even) {
+  background-color: whitesmoke;
 }
-.header{
-    background-color: #7397AB;
+details > a {
+  color: navy;
+  padding-left: 4px;
+  border-left: 8px blue solid;
 }
-.footer{
-    background-color: #392f41;
+details > summary {
+  list-style: none;
 }
-canvas.mengxi-mindmap{
-    color: black;
-    background-color: white;
+details > summary::before {
+  content: "📂";
 }
-.mengxi-canvasContainer{
-    background-color:#392f41;
+h2 {
+  border-left: grey solid thick;
+  padding-left: 0.25em;/*加个边界，显得比较分离*/
+  transition: 0.25s ease-in;
+  a{
+    text-decoration:none;
+    color:black;
+  }
+  ::before{content: "#";
+    opacity: 0;
+    transition: opacity 0.25s ease-in;
+  }
 }
-
-.text-important{
-    font-family: sans-serif;
-    font-weight: bold;
+button.sideBarItem {
+  font-size: 0.5cm;
 }
-.text-deprecated{
-    text-decoration: line-through
+.header {
+  background-color: #7397ab;
+}
+.footer {
+  background-color: #392f41;
+}
+.footer > * {
+  color: white;
+}
+.mainContent {
+  background-color: whitesmoke;
+}
+canvas.mengxi-mindmap {
+  color: black;
+  background-color: white;
+}
+.mengxi-GraphContainer {
+  background-color: gainsboro;
+  border-left: 8px dashed black;
+}
+.mengxi-GraphContainer > figcaption {
+  color: black;
 }

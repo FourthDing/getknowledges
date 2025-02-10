@@ -1,16 +1,22 @@
+html {
+  scroll-padding-top: calc(2rem + 32px);
+}
+
 div.flexColumns{
     display: flex;
+    justify-content: center;
     align-items: stretch;
     flex-direction: row;
+    margin:auto
 }
-.sideMenu{
+.sideBarItem{
     display: none;
-}
-.sideMenu > details{
-    display:inline-block;
 }
 details > a{
     padding-left: 8px;
+}
+h1{
+    font-size: 2rem;
 }
 .header{
     position: sticky;
@@ -18,4 +24,9 @@ details > a{
 }
 .mainContent{
     padding:0 32px;
+}
+.mengxi-GraphContainer{
+    display: block;
+    padding: 8px 8px 8px 0;
+    width: fit-content;
 }

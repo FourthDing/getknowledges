@@ -12,15 +12,15 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 class AutoDetails extends HTMLDivElement {
     constructor() {
         super();
-        this.href = "";
-        if (this.dataset.href) {
-            this.href = this.dataset.href;
+        this.src = "";
+        if (this.dataset.src) {
+            this.src = this.dataset.src;
         }
     }
     connectedCallback() {
         return __awaiter(this, void 0, void 0, function* () {
-            if (this.dataset.href) {
-                fetch(this.dataset.href)
+            if (this.dataset.src) {
+                fetch(this.dataset.src)
                     .then(response => response.json()) // 解析 JSON 数据
                     .then(data => console.log(data)) // 处理数据
                     .catch(error => console.error('Error:', error)); // 错误处理
