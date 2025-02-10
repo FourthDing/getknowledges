@@ -1,6 +1,6 @@
 
 html {
-  scroll-padding-top: calc(2rem + 32px);
+  scroll-padding-top: calc(4rem + 32px);
 }
 
 div.flexColumns{
@@ -12,10 +12,10 @@ div.flexColumns{
 }
 .sideBarItem{
     position: sticky;
-    top:calc(2rem + 32px);
+    top:calc(4rem + 32px);
     display:flex;
     flex-direction: column;
-    height: calc(100vh - 2rem - 32px);
+    height: calc(100vh - 4rem - 32px);
 }
 .sideMenu{
     min-width: 200px;
@@ -33,6 +33,11 @@ details > *:not(summary){
     position: sticky;
     top: 0px;
     z-index: 1145141919810;
+}
+nav{
+    button{
+        height: 2rem;
+    }
 }
 h1{
     padding: 16px 16px 16px 48px;
@@ -67,7 +72,7 @@ h2{
     height: 80px;
     bottom: 0;
 }
-button{
+button.sideBarItem{
     display: flex;
     justify-content: center;
     text-align: center;

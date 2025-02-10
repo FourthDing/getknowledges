@@ -30,7 +30,7 @@ class Graph extends HTMLCanvasElement {
             this.canvasContext = acanvas;
         }
         this.dpiScale = window.devicePixelRatio;
-        this.pixelPerfect();
+        //this.pixelPerfect();
     }
     pixelPerfect() {
         this.style.width = this.width.toString + "px";
@@ -54,8 +54,7 @@ class MindMap extends Graph {
             this.canvasContext = acanvas;
         }
         this.XMLDoc = new Document();
-        this.dpiScale = window.devicePixelRatio;
-        this.pixelPerfect();
+        //this.dpiScale = window.devicePixelRatio;
     }
     connectedCallback() {
         //测试图样

@@ -1,13 +1,15 @@
-.sideMenu{
+.sideMenu {
   overflow-y: auto;
 }
 
 .sideMenu > details {
-  border-top: 2px white solid;
   border-left: 8px orangered solid;
 }
 .sideMenu > details:nth-child(even) {
   background-color: whitesmoke;
+}
+details *{
+  border-top: 1px black solid;
 }
 details > a {
   color: navy;
@@ -21,14 +23,16 @@ details > summary::before {
   content: "📂";
 }
 h2 {
+  font-family: serif;
   border-left: grey solid thick;
-  padding-left: 0.25em;/*加个边界，显得比较分离*/
+  padding-left: 0.25em; /*加个边界，显得比较分离*/
   transition: 0.25s ease-in;
-  a{
-    text-decoration:none;
-    color:black;
+  a {
+    text-decoration: none;
+    color: black;
   }
-  ::before{content: "#";
+  ::before {
+    content: "#";
     opacity: 0;
     transition: opacity 0.25s ease-in;
   }

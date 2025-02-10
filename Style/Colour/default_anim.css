@@ -2,15 +2,6 @@
     background-color: cornsilk;
     border-right: 2px orangered solid;
 }
-.sideMenu{
-    transition: width 300ms ease-in;
-}
-.sideTips{
-    transition: width 300ms ease-in;
-}
-.sideTipsIframe{
-    transition: width 300ms ease-in;
-}
 details > a:hover{
     border-right: 2px blue solid;
 }

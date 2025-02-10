@@ -1,32 +1,73 @@
 html {
-  scroll-padding-top: calc(2rem + 32px);
+  --header-height: calc(4rem + 32px);
+  scroll-padding-top: var(--header-height);
 }
 
-div.flexColumns{
+div.flexColumns {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
+  margin: auto;
+}
+button {
+  height: 2rem;
+}
+button.sideBarItem {
+  display: none;
+}
+.sideBarItem {
+  position: fixed;
+  z-index: 1;
+}
+.sideMenu {
+  display: none;
+  background-color: white;
+  width: 75vw;
+  height: calc(100vh - 4rem - 32px);
+  left: 0;
+  @media (pointer: coarse) {
+    font-size: larger;
+  }
+}
+.sideMenu > details {
+  display: flex;
+  flex-direction: column;
+}
+details > * {
+  padding: 0.1cm;
+  :not(summary) {
     display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-direction: row;
-    margin:auto
+    flex-direction: column;
+  }
 }
-.sideBarItem{
-    display: none;
+.sideTips {
+  display: none;
+  background-color: white;
+  width: 75vw;
+  height: 100%;
+  right: 0;
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
 }
-details > a{
-    padding-left: 8px;
+details > a {
+  padding-left: 8px;
 }
-h1{
-    font-size: 2rem;
+h1 {
+  font-size: 2rem;
 }
-.header{
-    position: sticky;
-    top: 0px;
+.header {
+  position: sticky;
+  top: 0px;
 }
-.mainContent{
-    padding:0 32px;
+.mainContent {
+  padding: 0 2rem 0 2rem;
+  width: 100%;
 }
-.mengxi-GraphContainer{
-    display: block;
-    padding: 8px 8px 8px 0;
-    width: fit-content;
+.mengxi-GraphContainer {
+  display: block;
+  padding: 8px 8px 8px 0;
+  width: fit-content;
 }

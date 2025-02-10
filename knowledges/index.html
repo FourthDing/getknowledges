@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width inital-scale=1" />
     <title>《求知》所有知识。</title>
 </head>
 <link rel="stylesheet" type="text/css" href="../Style/reset.css">
 <link rel="stylesheet" type="text/css" href="../Style/Layout/content_wide.css" media="screen and (min-width: 1120px)">
-<link rel="stylesheet" type="text/css" href="../Style/Layout/content_narrow.css" media="screen and ((max-width: 1119px))">
+<link rel="stylesheet" type="text/css" href="../Style/Layout/content_narrow.css"
+    media="screen and ((max-width: 1119px))">
+<link rel="stylesheet" type="text/css" href="../Style/Layout/content_more_narrow.css"
+    media="screen and ((max-width: 768px))">
 <link rel="stylesheet" type="text/css" href="../Style/Layout/content_print.css" media="print">
 <link rel="stylesheet" type="text/css" href="../Style/Colour/default.css">
 <link rel="stylesheet" type="text/css" href="../Style/Colour/default_anim.css">
@@ -19,30 +24,42 @@
     <div id="container">
         <div class="header">
             <h1>《求知》所有知识。</h1>
+            <nav>
+                <button type="button" onclick="
+                            var a = document.getElementsByClassName('sideMenu')[0]
+                            var displayed = window.getComputedStyle(a).display
+                            if (displayed == 'none'){
+                                a.style['display'] = 'block';
+                            }else{
+                                a.style['display'] = 'none';
+                            }
+                            ">列表</button>
+                <button type="button" onclick="
+                            var a = document.getElementsByClassName('sideTips')[0]
+                            var displayed = window.getComputedStyle(a).display
+                            if (displayed == 'none'){
+                                a.style['display'] = 'block';
+                            }else{
+                                a.style['display'] = 'none';
+                            }
+                            ">副屏</button>
+            </nav>
         </div>
         <div class="flexColumns">
-            <button class="sideBarItem"  type="button" onclick="
-            var a = document.getElementsByClassName('sideMenu')[0]
-            if (a.dataset.folded){
-                a.removeAttribute('style')
-                a.removeAttribute('data-folded')
-            }else{
-                a.style['display'] = 'none';
-                a.dataset.folded=true;
-            }
-            "><</button>
             <div class="sideBarItem sideMenu" is="mengxi-autodetails" data-src="../sorts.json">
                 <b>目录</b>
-                <details><summary>科学</summary>
+                <details>
+                    <summary>科学</summary>
                     <a href="../">自然科学</a>
                     <a href="">社会科学</a>
                     <a href="">形式科学</a>
-                    <a href="">思维科学</a>    
+                    <a href="">思维科学</a>
                 </details>
-                <details><summary>技术</summary>
+                <details>
+                    <summary>技术</summary>
                     <a href="">工业技术</a>
                     <a href="">农业技术</a>
-                    <a href="">服务业技术</a>    
+                    <a href="">服务业技术</a>
                 </details>
             </div>
 
@@ -51,38 +68,26 @@
                 <p>
                     我们正在努力更新网站，争取向网站里扔很多的知识，有条理地展示并使你掌握它们，所以目前没有知识。<br />
                     不过我们技术不算够用，人手也不多，之前更是没做过这种东西，所以慢慢来吧。<br />
-                    <span class="text-important">I'm <span class="text-deprecated">different</span>.</span>
+                    <strong>I'm <em>different</em>.</strong>
                 </p>
-                <p></p>
                 <button type="button" onclick="alert(page)">
                     Github pages应该能用JS吧……
                 </button>
-                <br/>
+                <br />
                 <figure class="mengxi-GraphContainer">
-                    <canvas is="mengxi-mindmap" class="mengxi-mindmap" data-src="./test.mm" height="600px" width="600px"></canvas>
+                    <canvas is="mengxi-mindmap" class="mengxi-mindmap" data-src="./test.mm" height="600px"
+                        width="600px"></canvas>
                     <figcaption>canvas画图测试</figcaption>
                 </figure>
                 <script>
-                var img = new Image();
-                img.src = "../RS.ico";
-                img.onload = function() {
-                    document.getElementsByTagName("canvas")[0].getContext("2d").drawImage(this,500,500)
-                }
+                    var img = new Image();
+                    img.src = "../RS.ico";
+                    img.onload = function () {
+                        document.getElementsByTagName("canvas")[0].getContext("2d").drawImage(this, 500, 500)
+                    }
                 </script>
-                <h1></h1>
-                <p>
             </div>
             <div class="sideBarItem sideTips"><iframe class="sideTipsIframe" src="tips.html"></iframe></div>
-            <button class="sideBarItem" type="button" onclick="
-            var a = document.getElementsByClassName('sideTips')[0]
-            if (a.dataset.folded){
-                a.removeAttribute('style')
-                a.removeAttribute('data-folded')
-            }else{
-                a.style['display'] = 'none';
-                a.dataset.folded=true;
-            }
-            ">></button>
         </div>
         <div class="footer">
             <span>《求知》。</span>
