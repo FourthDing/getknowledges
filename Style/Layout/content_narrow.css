@@ -1,5 +1,5 @@
 html {
-  --header-height: calc(4rem + 32px);
+  --header-height: calc(5rem);
   scroll-padding-top: var(--header-height);
 }
 
@@ -10,7 +10,7 @@ div.flexColumns {
   flex-direction: row;
   margin: auto;
 }
-button {
+nav button {
   height: 2rem;
 }
 button.sideBarItem {
@@ -59,15 +59,32 @@ h1 {
   font-size: 2rem;
 }
 .header {
+  height: var(--header-height);
   position: sticky;
   top: 0px;
 }
+.pointerContainer {
+  position: sticky;
+  top:var(--header-height);
+  display: flex;
+  font-size: 2rem;
+  width: 2rem;
+  height: calc(100vh - var(--header-height));
+  background-color: whitesmoke;
+  z-index: 0;
+  
+}
 .mainContent {
-  padding: 0 2rem 0 2rem;
+  padding: 0 2rem 2rem 0;
   width: 100%;
 }
 .mengxi-GraphContainer {
-  display: block;
+  float: right;
+  clear: both;
   padding: 8px 8px 8px 0;
-  width: fit-content;
+  width: 50%;
+  margin: 1em 0 1em 1em;
+  .mengxi-mindmap {
+    width: 100%;
+  }
 }

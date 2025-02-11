@@ -1,6 +1,6 @@
 
 html {
-  scroll-padding-top: calc(4rem + 32px);
+  scroll-padding-top: calc(6rem);
 }
 
 div.flexColumns{
@@ -34,13 +34,11 @@ details > *:not(summary){
     top: 0px;
     z-index: 1145141919810;
 }
-nav{
-    button{
+nav button{
         height: 2rem;
     }
-}
 h1{
-    padding: 16px 16px 16px 48px;
+    padding: 1rem 1rem 1rem 2rem;
     font-size: 2rem;
     line-height: 1;
 }
@@ -48,13 +46,23 @@ h2{
     line-height: 2.5;
 }
 .mengxi-GraphContainer{
-    display: block;
+    float: right;
+    clear: both;
     padding: 8px 8px 8px 0;
-    width: fit-content;
+    width: 50%;
+    margin:1em 0 1em 1em;
+    .mengxi-mindmap {
+    width: 100%;
+  }
+}
+.pointerContainer{
+    font-size: 2rem;
+    width: 2rem;
+    background-color: whitesmoke;
 }
 .mainContent{
     flex-grow: 1;
-    padding:32px;
+    padding:2rem 1rem 2rem 0;
     min-width: 600px;
     max-width: 768px;
     z-index: 1;

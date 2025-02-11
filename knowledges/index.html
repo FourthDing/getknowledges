@@ -62,21 +62,13 @@
                     <a href="">服务业技术</a>
                 </details>
             </div>
-
+            <div class="sideBarItem pointerContainer">
+                <a onclick="alert('能点诶，我还以为我是<p>呢。')">></a>
+            </div>
             <div class="mainContent">
                 <h2 id="概述"><a href="#概述">概述</a></h2>
-                <p>
-                    我们正在努力更新网站，争取向网站里扔很多的知识，有条理地展示并使你掌握它们，所以目前没有知识。<br />
-                    不过我们技术不算够用，人手也不多，之前更是没做过这种东西，所以慢慢来吧。<br />
-                    <strong>I'm <em>different</em>.</strong>
-                </p>
-                <button type="button" onclick="alert(page)">
-                    Github pages应该能用JS吧……
-                </button>
-                <br />
                 <figure class="mengxi-GraphContainer">
-                    <canvas is="mengxi-mindmap" class="mengxi-mindmap" data-src="./test.mm" height="600px"
-                        width="600px"></canvas>
+                    <canvas is="mengxi-mindmap" class="mengxi-mindmap" data-src="./test.mm" height="600px" width="600px"></canvas>
                     <figcaption>canvas画图测试</figcaption>
                 </figure>
                 <script>
@@ -86,6 +78,25 @@
                         document.getElementsByTagName("canvas")[0].getContext("2d").drawImage(this, 500, 500)
                     }
                 </script>
+                <p>
+                    我们正在努力更新网站，争取向网站里扔很多的知识，有条理地展示并使你掌握它们，所以目前没有知识。<br />
+                    不过我们技术不算够用，人手也不多，之前更是没做过这种东西，所以慢慢来吧。<br />
+                    <strong>I'm <em>different</em>.</strong>
+                </p>
+                <button type="button" onclick="alert(page)">
+                    Github pages应该能用JS吧……
+                </button>
+                <br />
+                <p>好吧，如果你使用电脑版或者你的屏够宽，你会看到这段文字在左，图在右。</p>
+                </br>
+                <h2 id="如何保证写出好资料"><a href="#如何保证写出好资料">如何保证写出好资料</a></h2>
+                <p>
+                    这个……确实是个问题啊……<br />
+                    我们也在学习，所以也许可以先做成把笔记电子化的工程。<br />
+                    试着把学习时用到的思想、方法、知识点都写进去，把它们做成图（因此自大地开了“梦溪”的坑），然后就积少成多，变得有规模，提升小站的价值。<br />
+                    也许可以把它们分成一个一个小“玩具”，没有实际意义，然后把意义填进去，使它们从“玩具”成长为工具。<br />
+
+                </p>
             </div>
             <div class="sideBarItem sideTips"><iframe class="sideTipsIframe" src="tips.html"></iframe></div>
         </div>
