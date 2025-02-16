@@ -8,6 +8,7 @@
     line-height: 1.5;
     margin-bottom: 0.5em;
     clear: both;
+    scroll-snap-align: start;
   }
   & .text-important {
     font-family: sans-serif;
@@ -16,4 +17,10 @@
   & .text-deprecated {
     text-decoration: line-through;
   }
+}
+
+html{
+  scroll-snap-type: y proximity;
+    
+    scroll-snap-stop: always;
 }
