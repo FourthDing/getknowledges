@@ -66,6 +66,7 @@ h2{
     min-width: 600px;
     max-width: 768px;
     z-index: 1;
+    min-height: calc(100vh - 4rem - 32px);
 }
 .sideTips{
     min-width: 200px;

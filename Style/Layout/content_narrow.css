@@ -62,6 +62,7 @@ h1 {
   height: var(--header-height);
   position: sticky;
   top: 0px;
+  z-index: 1145141919810;
 }
 .pointerContainer {
   position: sticky;
