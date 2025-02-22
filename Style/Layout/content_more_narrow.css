@@ -8,6 +8,9 @@
     width: 100%;
   }
 }
+.sideMenu{
+  width: 75vw;
+}
 .sideTips {
   position: fixed;
   display: none;

@@ -23,7 +23,7 @@ button.sideBarItem {
 .sideMenu {
   display: none;
   background-color: white;
-  width: 75vw;
+  width: 50vw;
   height: calc(100vh - 4rem - 32px);
   left: 0;
   @media (pointer: coarse) {
@@ -44,7 +44,7 @@ details > * {
 .sideTips {
   display: none;
   background-color: white;
-  width: 75vw;
+  width: 50vw;
   height: 100%;
   right: 0;
   iframe {
@@ -71,7 +71,7 @@ h1 {
   width: 2rem;
   height: calc(100vh - var(--header-height));
   background-color: whitesmoke;
-  z-index: 0;
+  z-index:unset;
   
 }
 .mainContent {
